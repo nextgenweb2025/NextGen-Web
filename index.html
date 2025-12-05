@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Web - A Próxima Geração do Seu Negócio Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-spinner"></div>
+                <span>NextGen Web</span>
+            </div>
+            <p>Carregando a próxima geração...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="mainHeader">
+        <nav class="nav-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0Z" fill="url(#paint0_linear)"/>
+                    <path d="M26 16L26 24H14V16H26Z" fill="white"/>
+                    <path d="M16 28H24V32H16V28Z" fill="white"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2563FF"/>
+                            <stop offset="1" stop-color="#7C3AED"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">NextGen Web</span>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#order" class="nav-link">Solicitar Site</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        🚀 Próxima Geração
+                    </div>
+                    <h1>Eleve Seu Negócio ao <span class="gradient-text">Digital</span></h1>
+                    <p class="hero-description">Sites modernos, responsivos e com tecnologia de ponta para impulsionar seus resultados. Transforme sua presença online conosco.</p>
+                    <div class="hero-buttons">
+                        <a href="#order" class="cta-button primary">Solicitar Meu Site</a>
+                        <a href="#portfolio" class="cta-button secondary">
+                            <span>Ver Portfólio</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="150">0</span>
+                            <span class="stat-label">Sites Entregues</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="98">0</span>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="24">0</span>
+                            <span class="stat-label">Suporte 24h</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="device-mockup">
+                        <div class="screen">
+                            <div class="screen-content">
+                                <div class="mockup-demo">
+                                    <div class="demo-header">
+                                        <div class="demo-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="demo-content">
+                                        <div class="demo-hero">
+                                            <h4>NextGen Web</h4>
+                                            <p>Seu site profissional</p>
+                                        </div>
+                                        <div class="demo-features">
+                                            <div class="demo-feature">🚀 Rápido</div>
+                                            <div class="demo-feature">📱 Responsivo</div>
+                                            <div class="demo-feature">⚡ Moderno</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Serviços <span class="gradient-text">Completos</span></h2>
+                <p>Soluções digitais sob medida para seu negócio</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Sites Institucionais</h3>
+                    <p>Presença profissional online com design moderno e totalmente responsivo</p>
+                    <ul class="service-features">
+                        <li>Design personalizado</li>
+                        <li>Otimizado para SEO</li>
+                        <li>Integração com redes sociais</li>
+                        <li>Formulário de contato</li>
+                    </ul>
+                    <div class="service-price">
+                        A partir de <span>R$ 297</span>
+                    </div>
+                </div>
+                
+                <div class="service-card featured">
+                    <div class="service-badge">Mais Popular</div>
+                    <div class="service-icon">🛒</div>
+                    <h3>Lojas Virtuais</h3>
+                    <p>E-commerce completo com sistema de pagamentos e gestão de produtos</p>
+                    <ul class="service-features">
+                        <li>Catálogo de produtos</li>
+                        <li>Múltiplas formas de pagamento</li>
+                        <li>Painel administrativo</li>
+                        <li>Gestão de estoque</li>
+                    </ul>
+                    <div class="service-price">
+                        A partir de <span>R$ 497</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📅</div>
+                    <h3>Sites de Agendamento</h3>
+                    <p>Sistema completo para agendamentos online com lembretes automáticos</p>
+                    <ul class="service-features">
+                        <li>Calendário integrado</li>
+                        <li>Lembretes automáticos</li>
+                        <li>Gestão de clientes</li>
+                        <li>Pagamento online</li>
+                    </ul>
+                    <div class="service-price">
+                        A partir de <span>R$ 397</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nosso <span class="gradient-text">Portfólio</span></h2>
+                <p>Confira alguns dos nossos trabalhos recentes</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=400&h=300&fit=crop" alt="Salão de Beleza Studio Bella" loading="lazy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Studio Bella</h3>
+                        <p>Salão de beleza com sistema de agendamentos online e galeria de trabalhos</p>
+                        <span class="portfolio-tag">Agendamento</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop" alt="Nail Designer Maria" loading="lazy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Nails by Maria</h3>
+                        <p>Site para nail designer com portfólio e catálogo de serviços</p>
+                        <span class="portfolio-tag">Portfólio</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop" alt="Loja de Roupas Moda Store" loading="lazy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Moda Store</h3>
+                        <p>E-commerce completo para moda feminina com múltiplos pagamentos</p>
+                        <span class="portfolio-tag">E-commerce</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Pedido -->
+    <section class="order-section" id="order">
+        <div class="container">
+            <div class="section-title">
+                <h2>Solicite Seu <span class="gradient-text">Site</span></h2>
+                <p>Preencha o formulário e vamos criar a solução perfeita para você</p>
+            </div>
+            
+            <div class="order-container">
+                <div class="order-info">
+                    <h3>Como funciona?</h3>
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Preencha o formulário</h4>
+                            <p>Nos conte sobre seu negócio e necessidades específicas</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Desenvolvimento</h4>
+                            <p>Criamos seu site com as melhores tecnologias do mercado</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Seu site pronto!</h4>
+                            <p>Entregamos seu site moderno, rápido e funcional</p>
+                        </div>
+                    </div>
+                    
+                    <div class="guarantee">
+                        <div class="guarantee-icon">✅</div>
+                        <div class="guarantee-content">
+                            <h4>Garantia de 7 dias</h4>
+                            <p>Se não gostar do resultado, devolvemos 100% do seu dinheiro</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="order-form" id="siteOrderForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome Completo *</label>
+                            <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Telefone para Contato</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+                        </div>
+                        <div class="form-group">
+                            <label for="business">Seu Negócio *</label>
+                            <select id="business" name="business" required>
+                                <option value="">Selecione seu negócio</option>
+                                <option value="nails">Nail Designer</option>
+                                <option value="hair">Cabeleireiro(a)</option>
+                                <option value="beauty">Salão de Beleza</option>
+                                <option value="esthetics">Esteticista</option>
+                                <option value="barber">Barbearia</option>
+                                <option value="clothing">Loja de Roupas</option>
+                                <option value="accessories">Acessórios</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="siteType">Tipo de Site *</label>
+                        <select id="siteType" name="siteType" required>
+                            <option value="">Selecione o tipo de site</option>
+                            <option value="institutional">Site Institucional (R$ 297)</option>
+                            <option value="appointment">Site de Agendamentos (R$ 397)</option>
+                            <option value="ecommerce">Loja Virtual (R$ 497)</option>
+                            <option value="portfolio">Portfólio (R$ 347)</option>
+                            <option value="custom">Personalizado (Sob consulta)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Paleta de Cores (Máx. 3 cores)</label>
+                        <div class="color-palette">
+                            <div class="color-option" data-color="#2563EB" style="background: #2563EB;"></div>
+                            <div class="color-option" data-color="#7C3AED" style="background: #7C3AED;"></div>
+                            <div class="color-option" data-color="#DC2626" style="background: #DC2626;"></div>
+                            <div class="color-option" data-color="#059669" style="background: #059669;"></div>
+                            <div class="color-option" data-color="#D97706" style="background: #D97706;"></div>
+                            <div class="color-option" data-color="#0EA5E9" style="background: #0EA5E9;"></div>
+                            <div class="color-option" data-color="#8B5CF6" style="background: #8B5CF6;"></div>
+                            <div class="color-option" data-color="#EC4899" style="background: #EC4899;"></div>
+                        </div>
+                        <input type="hidden" id="selectedColors" name="selectedColors">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="features">Funcionalidades Desejadas</label>
+                        <textarea id="features" name="features" rows="4" placeholder="Ex: Galeria de fotos, sistema de agendamento, integração com WhatsApp, blog..."></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="deadline">Prazo Desejado</label>
+                            <select id="deadline" name="deadline">
+                                <option value="7">1 semana (++)</option>
+                                <option value="10">10 dias (+)</option>
+                                <option value="14" selected>2 semanas</option>
+                                <option value="21">3 semanas</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Orçamento Previsto</label>
+                            <select id="budget" name="budget">
+                                <option value="297">Até R$ 300</option>
+                                <option value="397">R$ 300 - R$ 500</option>
+                                <option value="497" selected>R$ 500 - R$ 800</option>
+                                <option value="797">Acima de R$ 800</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Enviar Solicitação</span>
+                        <div class="btn-spinner"></div>
+                    </button>
+                    
+                    <p class="form-note">* Entraremos em contato por e-mail em até 24 horas úteis</p>
+                    <p class="privacy-note">Ao enviar este formulário, você concorda com nossa <a href="#politica-privacidade" class="privacy-link-modal">Política de Privacidade</a> e <a href="#termos-servico" class="terms-link-modal">Termos de Serviço</a>.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perguntas <span class="gradient-text">Frequentes</span></h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Quanto tempo leva para ficar pronto?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O prazo médio é de 2 semanas, podendo variar conforme a complexidade do projeto. Oferecemos opções aceleradas com custo adicional para prazos mais curtos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>O site funciona em celular?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Todos os nossos sites são 100% responsivos e funcionam perfeitamente em qualquer dispositivo: celular, tablet e computador. Testamos em todos os tamanhos de tela.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Preciso pagar hospedagem?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não! Incluímos hospedagem gratuita no Netlify por 1 ano. Após esse período, a hospedagem custa apenas R$ 20/mês ou você pode migrar para outro serviço.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Como entro em contato?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Atendemos exclusivamente pelo Instagram <strong>@nextgenweb2025</strong> e e-mail. Respondemos em até 24 horas úteis.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Vocês fazem SEO?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Todos os nossos sites são otimizados para mecanismos de busca desde o início. Incluímos SEO básico e oferecemos serviços avançados de otimização.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Política de Privacidade -->
+    <section class="privacy-section" id="politica-privacidade">
+        <div class="container">
+            <div class="section-title">
+                <h2>Política de <span class="gradient-text">Privacidade</span></h2>
+            </div>
+            <div class="privacy-content">
+                <div class="privacy-card">
+                    <h3>📋 Política de Privacidade NextGen Web</h3>
+                    <p class="last-update">Última atualização: Janeiro de 2024</p>
+                    
+                    <div class="privacy-section-item">
+                        <h4>1. Coleta de Informações</h4>
+                        <p>Coletamos informações que você nos fornece diretamente, incluindo:</p>
+                        <ul>
+                            <li>Nome completo</li>
+                            <li>Endereço de e-mail</li>
+                            <li>Número de telefone (opcional)</li>
+                            <li>Informações sobre seu negócio</li>
+                            <li>Detalhes do projeto desejado</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="privacy-section-item">
+                        <h4>2. Uso das Informações</h4>
+                        <p>Utilizamos suas informações para:</p>
+                        <ul>
+                            <li>Processar sua solicitação de orçamento</li>
+                            <li>Entrar em contato para discutir seu projeto</li>
+                            <li>Enviar atualizações sobre seu pedido</li>
+                            <li>Melhorar nossos serviços</li>
+                            <li>Enviar comunicações de marketing (apenas com seu consentimento)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="privacy-section-item">
+                        <h4>3. Armazenamento e Segurança</h4>
+                        <p>Seus dados são armazenados com segurança:</p>
+                        <ul>
+                            <li>Localmente em seu dispositivo (via localStorage)</li>
+                            <li>Em nosso sistema de mensagens do Telegram (criptografado)</li>
+                            <li>Por no máximo 12 meses após a conclusão do projeto</li>
+                            <li>Protegidos por medidas de segurança implementadas</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="privacy-section-item">
+                        <h4>4. Compartilhamento de Dados</h4>
+                        <p>Não vendemos ou alugamos suas informações pessoais. Podemos compartilhar dados apenas:</p>
+                        <ul>
+                            <li>Com prestadores de serviços essenciais (hospedagem, etc.)</li>
+                            <li>Quando exigido por lei</li>
+                            <li>Para proteger nossos direitos legais</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="privacy-section-item">
+                        <h4>5. Seus Direitos</h4>
+                        <p>Você tem o direito de:</p>
+                        <ul>
+                            <li>Acessar suas informações pessoais</li>
+                            <li>Corrigir dados incorretos</li>
+                            <li>Solicitar a exclusão de seus dados</li>
+                            <li>Retirar consentimento a qualquer momento</li>
+                            <li>Receber seus dados em formato portável</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="privacy-section-item">
+                        <h4>6. Cookies e Tecnologias Similares</h4>
+                        <p>Utilizamos localStorage para:</p>
+                        <ul>
+                            <li>Salvar rascunhos do formulário</li>
+                            <li>Armazenar preferências do usuário</li>
+                            <li>Manter sessões de navegação</li>
+                        </ul>
+                        <p>Não utilizamos cookies de rastreamento de terceiros.</p>
+                    </div>
+                    
+                    <div class="privacy-section-item">
+                        <h4>7. Contato</h4>
+                        <p>Para exercer seus direitos ou dúvidas sobre privacidade:</p>
+                        <ul>
+                            <li>Email: contato.nextgenweb@gmail.com</li>
+                            <li>Instagram: @nextgenweb2025</li>
+                            <li>Tempo de resposta: Até 7 dias úteis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="privacy-section-item">
+                        <h4>8. Alterações nesta Política</h4>
+                        <p>Podemos atualizar esta política periodicamente. Notificaremos sobre mudanças significativas através do nosso site ou email.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Termos de Serviço -->
+    <section class="terms-section" id="termos-servico">
+        <div class="container">
+            <div class="section-title">
+                <h2>Termos de <span class="gradient-text">Serviço</span></h2>
+            </div>
+            <div class="terms-content">
+                <div class="terms-card">
+                    <h3>📜 Termos de Serviço NextGen Web</h3>
+                    <p class="last-update">Última atualização: Janeiro de 2024</p>
+                    
+                    <div class="terms-section-item">
+                        <h4>1. Aceitação dos Termos</h4>
+                        <p>Ao utilizar nossos serviços, você concorda com estes Termos de Serviço. Se não concordar, por favor, não utilize nossos serviços.</p>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>2. Serviços Oferecidos</h4>
+                        <p>A NextGen Web oferece:</p>
+                        <ul>
+                            <li>Desenvolvimento de sites institucionais</li>
+                            <li>Criação de lojas virtuais (e-commerce)</li>
+                            <li>Sistemas de agendamento online</li>
+                            <li>Portfólios digitais</li>
+                            <li>Sites personalizados sob consulta</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>3. Processo de Desenvolvimento</h4>
+                        <ol>
+                            <li><strong>Solicitação:</strong> Preenchimento do formulário com detalhes do projeto</li>
+                            <li><strong>Orçamento:</strong> Envio de proposta com valor e prazo</li>
+                            <li><strong>Aprovação:</strong> Confirmação do cliente e pagamento inicial</li>
+                            <li><strong>Desenvolvimento:</strong> Criação do site conforme especificações</li>
+                            <li><strong>Revisões:</strong> Até 3 rodadas de alterações inclusas</li>
+                            <li><strong>Entrega:</strong> Publicação do site e treinamento básico</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>4. Pagamentos e Preços</h4>
+                        <ul>
+                            <li>Os preços são em Reais (R$)</li>
+                            <li>Pagamento via PIX, transferência bancária ou cartão</li>
+                            <li>50% no início do projeto e 50% na entrega</li>
+                            <li>Orçamentos são válidos por 30 dias</li>
+                            <li>Preços não incluem domínio e hospedagem após 1º ano</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>5. Garantia e Reembolso</h4>
+                        <ul>
+                            <li><strong>Garantia de 7 dias:</strong> Reembolso integral se não estiver satisfeito</li>
+                            <li><strong>Garantia de funcionamento:</strong> 30 dias para correção de bugs</li>
+                            <li><strong>Suporte:</strong> 30 dias de suporte básico incluído</li>
+                            <li><strong>Alterações:</strong> Após 3 rodadas, alterações serão cobradas</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>6. Prazos de Entrega</h4>
+                        <ul>
+                            <li>Sites Institucionais: 10-14 dias úteis</li>
+                            <li>Lojas Virtuais: 15-20 dias úteis</li>
+                            <li>Sites de Agendamento: 12-16 dias úteis</li>
+                            <li>Prazos começam após pagamento inicial</li>
+                            <li>Atrasos por parte do cliente estendem o prazo</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>7. Direitos Autorais e Propriedade</h4>
+                        <ul>
+                            <li>O cliente é dono do código-fonte entregue</li>
+                            <li>NextGen Web mantém direitos sobre templates reutilizáveis</li>
+                            <li>É responsabilidade do cliente fornecer conteúdo legal</li>
+                            <li>Imagens de terceiros devem ter licença adequada</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>8. Responsabilidades do Cliente</h4>
+                        <p>O cliente deve:</p>
+                        <ul>
+                            <li>Fornecer conteúdo (textos, imagens) no prazo</li>
+                            <li>Responder a solicitações dentro de 48h</li>
+                            <li>Fornecer feedback construtivo</li>
+                            <li>Realizar pagamentos conforme combinado</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>9. Limitação de Responsabilidade</h4>
+                        <p>A NextGen Web não se responsabiliza por:</p>
+                        <ul>
+                            <li>Problemas causados por terceiros (hospedagem, domínio)</li>
+                            <li>Perdas de negócios ou lucros cessantes</li>
+                            <li>Conteúdo fornecido pelo cliente</li>
+                            <li>Mau uso do site após entrega</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>10. Rescisão</h4>
+                        <p>O contrato pode ser rescindido por:</p>
+                        <ul>
+                            <li>Inadimplência do cliente</li>
+                            <li>Descumprimento dos termos</li>
+                            <li>Força maior</li>
+                            <li>Acordo mútuo</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>11. Disposições Gerais</h4>
+                        <ul>
+                            <li>Estes termos são regidos pelas leis brasileiras</li>
+                            <li>Disputas serão resolvidas em São Paulo/SP</li>
+                            <li>Termos podem ser atualizados periodicamente</li>
+                            <li>Continuar usando os serviços significa aceitar mudanças</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="terms-section-item">
+                        <h4>12. Contato</h4>
+                        <p>Para questões sobre estes termos:</p>
+                        <ul>
+                            <li>Email: contato.nextgenweb@gmail.com</li>
+                            <li>Instagram: @nextgenweb2025</li>
+                            <li>Horário: Segunda a sexta, 9h às 18h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0Z" fill="url(#paint0_linear)"/>
+                            <path d="M26 16L26 24H14V16H26Z" fill="white"/>
+                            <path d="M16 28H24V32H16V28Z" fill="white"/>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2563FF"/>
+                                    <stop offset="1" stop-color="#7C3AED"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">NextGen Web</span>
+                    </div>
+                    <p>A próxima geração do seu negócio online. Sites modernos, responsivos e com tecnologia de ponta para impulsionar seus resultados.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/nextgenweb2025" target="_blank" aria-label="Instagram" class="social-link instagram-link">
+                            <span>📸</span>
+                        </a>
+                        <a href="#" class="social-link email-link" data-email="contato.nextgenweb@gmail.com" aria-label="Email">
+                            <span>✉️</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#services">Sites Institucionais</a></li>
+                        <li><a href="#services">Lojas Virtuais</a></li>
+                        <li><a href="#services">Sites de Agendamento</a></li>
+                        <li><a href="#services">Portfólios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#politica-privacidade">Política de Privacidade</a></li>
+                        <li><a href="#termos-servico">Termos de Serviço</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#order">Solicitar Orçamento</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <div class="contact-info">
+                        <p>
+                            <span class="contact-icon">📧</span>
+                            <a href="#" class="email-link-footer" data-email="contato.nextgenweb@gmail.com">
+                                contato.nextgenweb@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <span class="contact-icon">📸</span>
+                            <a href="https://www.instagram.com/nextgenweb2025" target="_blank" class="instagram-link-footer">
+                                @nextgenweb2025
+                            </a>
+                        </p>
+                    
+                        <p><span class="contact-icon">📍</span> Minas Gerais, MG</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 NextGen Web. Todos os direitos reservados.</p>
+                    <p class="legal-links">
+                        <a href="#politica-privacidade">Política de Privacidade</a> | 
+                        <a href="#termos-servico">Termos de Serviço</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <div class="modal-icon">✅</div>
+            <h3>Solicitação Enviada!</h3>
+            <p>Sua solicitação foi recebida com sucesso! Entraremos em contato por e-mail em até 24 horas úteis para discutir os detalhes do seu projeto.</p>
+            <button class="close-modal" onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Modal de Email -->
+    <div class="modal email-modal" id="emailModal">
+        <div class="modal-content">
+            <div class="modal-icon">📧</div>
+            <h3>Enviar Email</h3>
+            <p class="email-display">Email: <strong id="modalEmail">contato.nextgenweb@gmail.com</strong></p>
+            <p>Escolha uma opção:</p>
+            <div class="email-options">
+                <button class="cta-button primary copy-email-btn" onclick="copyEmailToClipboard()">
+                    <span>📋 Copiar Email</span>
+                </button>
+                <button class="cta-button secondary open-email-btn" onclick="openEmailClient()">
+                    <span>📧 Abrir Email</span>
+                </button>
+                <button class="close-email-btn" onclick="closeEmailModal()">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Política de Privacidade -->
+    <div class="modal privacy-modal" id="privacyModal">
+        <div class="modal-content">
+            <div class="modal-icon">🔒</div>
+            <h3>Política de Privacidade</h3>
+            <div class="modal-scroll-content">
+                <p>Ao utilizar nossos serviços, você concorda com nossa Política de Privacidade completa.</p>
+                <p><strong>Resumo:</strong></p>
+                <ul>
+                    <li>Seus dados são usados apenas para processar sua solicitação</li>
+                    <li>Armazenamos informações localmente e no Telegram</li>
+                    <li>Não compartilhamos dados com terceiros sem consentimento</li>
+                    <li>Você pode solicitar exclusão de dados a qualquer momento</li>
+                </ul>
+                <p>Para ler a política completa, <a href="#politica-privacidade">clique aqui</a>.</p>
+            </div>
+            <button class="close-modal" onclick="closePrivacyModal()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Modal de Termos de Serviço -->
+    <div class="modal terms-modal" id="termsModal">
+        <div class="modal-content">
+            <div class="modal-icon">📜</div>
+            <h3>Termos de Serviço</h3>
+            <div class="modal-scroll-content">
+                <p>Ao enviar o formulário, você concorda com nossos Termos de Serviço.</p>
+                <p><strong>Principais pontos:</strong></p>
+                <ul>
+                    <li>Garantia de 7 dias para reembolso</li>
+                    <li>Processo de desenvolvimento em 3 etapas</li>
+                    <li>Até 3 rodadas de revisão inclusas</li>
+                    <li>Pagamento 50% no início e 50% na entrega</li>
+                </ul>
+                <p>Para ler os termos completos, <a href="#termos-servico">clique aqui</a>.</p>
+            </div>
+            <button class="close-modal" onclick="closeTermsModal()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Botão Instagram Flutuante -->
+    <div class="instagram-float">
+        <a href="https://www.instagram.com/nextgenweb2025" target="_blank" aria-label="Siga-nos no Instagram" class="instagram-float-link">
+            <div class="instagram-icon">
+                <span>📸</span>
+            </div>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                              </html>
