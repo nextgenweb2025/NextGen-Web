@@ -49,3 +49,6 @@
 ### 📋 Pré-requisitos
 - Navegador moderno (Chrome, Firefox, Safari, Edge)
 - Conexão com internet
+
+### Site oficial abaixo!
+https://nextgenweb-ng.netlify.app/
